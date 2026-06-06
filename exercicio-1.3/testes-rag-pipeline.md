@@ -286,6 +286,7 @@ Diferença prática entre os dois testes: no caso da carga perigosa, retrieval m
 Sugestão de correção em duas frentes: (1) descobrir por que SLA-2024-B/-C não entram no top-k — provavelmente chunking ou embedding da tabela; e (2) endurecer o prompt de geração para citar apenas o chunk de onde o número saiu e abster-se quando o valor não estiver no contexto. Quer que eu escreva um caso de teste de groundedness que pegue justamente esse padrão (número plausível sem chunk de suporte)?
 
 ## Pergunta 3
+Quanto custa o frete para 600kg para Manaus?
 
 ### Chunks:
 
