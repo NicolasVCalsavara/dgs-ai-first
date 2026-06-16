@@ -1,0 +1,39 @@
+{
+  "servers": {
+    "filesystem-workspace": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c", "npx", "-y", "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/specs",
+        "${workspaceFolder}/skills"
+      ]
+    },
+    "filesystem-sources": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c", "npx", "-y", "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}/docs/novatech",
+        "${workspaceFolder}/data/retrieval-corpus",
+        "${workspaceFolder}/prompts"
+      ]
+    },
+    "git": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "python", "-m", "mcp_server_git", "--repository", "${workspaceFolder}"]
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-memory"]
+    },
+    "everything": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
+}
